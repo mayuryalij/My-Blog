@@ -1,4 +1,5 @@
 import React from "react";
+import { CommentsList } from "./CommentsList";
 
 export const AddCommentForm = ({articleName, setArticleInfo}) => {
     const [username, setUsername] = React.useState("");
@@ -12,13 +13,14 @@ export const AddCommentForm = ({articleName, setArticleInfo}) => {
                 "Content-Type": "application/json",
             },
         });
-        const body = await result.json();
+        const body = await result.json(); 
         setArticleInfo(body);
         setUsername("");
         setCommentText("");
     };
 
   return (
+    <div>
     <form className="shadow rounded px-8 pt-6 pb-8 mb-4">
       <h3 className="text-xl font-bold mb-4 text-gray-900">Add a Comment</h3>
       <label className="block text-gray-700 text-sm font-bold mb-2">
@@ -43,5 +45,9 @@ export const AddCommentForm = ({articleName, setArticleInfo}) => {
         Add Comment
       </button>
     </form>
+    <div>
+    <CommentsList/>
+    </div>
+    </div>
   );
 };

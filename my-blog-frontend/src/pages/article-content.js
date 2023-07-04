@@ -40,13 +40,16 @@ const articles = [
     JavaScript is the sauce of the web. It is what makes things dance. JavaScript enables web pages to do things like display updated content, show maps that you can interact with, and many other things.`],
     date: "2022-03-10",
   },
-  {
-    name: "learn-new",
-    title: "The Fastest way to learn new things",
-    thumbnail:'/images/blog3.jpg',
-    content: [`Is it ever too late to learn a new skill? The answer is: absolutely not! Learning new things is beneficial at any age, and it can change your life in many ways—from giving you a career boost to helping you discover a new passion. All you need is enthusiasm, focus, and some helpful learning strategies. From cooking to learning a new language, here’s a list of tips and techniques that will help you learn any new skill you desire.`],
-    date: "2022-05-11",
-  },
+  
 ];
 
 export default articles;
+
+
+// {
+//   name: "learn-new",
+//   title: "The Fastest way to learn new things",
+//   thumbnail:'/images/blog3.jpg',
+//   content: [`Is it ever too late to learn a new skill? The answer is: absolutely not! Learning new things is beneficial at any age, and it can change your life in many ways—from giving you a career boost to helping you discover a new passion. All you need is enthusiasm, focus, and some helpful learning strategies. From cooking to learning a new language, here’s a list of tips and techniques that will help you learn any new skill you desire.`],
+//   date: "2022-05-11",
+// },

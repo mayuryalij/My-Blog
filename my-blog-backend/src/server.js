@@ -7,7 +7,7 @@ const port = process.env.PORT;
 
 const app = express();
 
-app.use(bodyParser.json());
+app.use(bodyParser.json());  
 
 // Connect to DATABASE
 const DATABASE_URL = process.env.DATABASE_URL;
