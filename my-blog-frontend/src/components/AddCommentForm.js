@@ -6,7 +6,7 @@ export const AddCommentForm = ({articleName, setArticleInfo}) => {
     const [commentText, setCommentText] = React.useState("");
 
     const addComment = async () => {
-        const result = await fetch(`https://my-blog-backend-m7un.onrender.com/api/articles/${articleName.name}/add-comments`, {
+        const result = await fetch(`api/articles/${articleName.name}/add-comments`, {
             method: "post",
             body: JSON.stringify({ username, text: commentText }),
             headers: {
